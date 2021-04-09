@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="main.js"></script> -->
+    <script>
+      // Request for input
+      const input1 = parseFloat(prompt("Enter first number: "));
+      const input2 = parseFloat(prompt("Enter second number: "));
+
+      // Operators
+      const operator = prompt(
+        "Enter an operator: \n+ : Addition\n- : Substractin\n/ : Division\n* : Multiplication\n^ : Power"
+      );
+
+      if (operator === "+") {
+        alert(`${input1} + ${input2} = ${input1 + input2}`);
+      } else if (operator === "-") {
+        alert(`${input1} - ${input2} = ${input1 - input2}`);
+      } else if (operator === "/") {
+        alert(`${input1} / ${input2} = ${input1 / input2}`);
+      } else if (operator === "*") {
+        alert(`${input1} * ${input2} = ${input1 * input2}`);
+      } else if (operator === "^") {
+        alert(`${input1} ^ ${input2} = ${input1 ** input2}`);
+      } else {
+        alert("Operator not recognized!");
+      }
+    </script>
+  </body>
+</html>
